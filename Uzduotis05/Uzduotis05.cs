@@ -1,6 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-namespace AntraPaskaita
+namespace Paskaita02
 {
     public class Uzduotis05
     {

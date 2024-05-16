@@ -1,4 +1,4 @@
-﻿namespace AntraPaskaita
+﻿namespace Paskaita02
 {
     public class Uzduotis11
     {
