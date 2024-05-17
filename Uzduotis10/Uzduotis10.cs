@@ -12,7 +12,7 @@
             bool correctType = false;
             int entriesAmount = 0;
             int maxValue = 0;
-            int minValue = 0;
+            int minValue;
 
             // Get number of entries
             do
@@ -39,25 +39,16 @@
             // Go through array and find largest integer
             for (int i = 0; i < entriesAmount; i++)
             {
-                for (int j = 0; j < entriesAmount; j++)
-                {
-                    if (entries[i] >= entries[j])
-                        maxValue = entries[i];
-                    else
-                        break;
-                }
+                if (entries[i] >= maxValue)
+                    maxValue = entries[i];
             }
 
             // Go through array and find smallest integer
+            minValue = entries[0];
             for (int i = 0; i < entriesAmount; i++)
             {
-                for (int j = 0; j < entriesAmount; j++)
-                {
-                    if (entries[i] <= entries[j])
-                        minValue = entries[i];
-                    else
-                        break;
-                }
+                if (entries[i] <= minValue)
+                    minValue = entries[i];
             }
 
             Console.WriteLine($"Maziausias ivestas skaicius yra {minValue}, didziausias ivestas skaicius yra {maxValue}");
